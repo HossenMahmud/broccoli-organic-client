@@ -84,7 +84,7 @@ const useFirebase = () => {
     // save user into Database
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('http://localhost:5000/users', {
+        fetch('https://pure-sea-65908.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
@@ -96,7 +96,7 @@ const useFirebase = () => {
 
     // Check user is Admin
     useEffect(() => {
-        fetch(`http://localhost:5000/users/${user?.email}`)
+        fetch(`https://pure-sea-65908.herokuapp.com/users/${user?.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
             .catch((e) => {

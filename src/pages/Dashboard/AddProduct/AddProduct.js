@@ -14,7 +14,7 @@ const AddProduct = () => {
         const foodData = {
             ...product
         }
-        fetch("http://localhost:5000/addFoods", {
+        fetch("https://pure-sea-65908.herokuapp.com/addFoods", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(foodData),

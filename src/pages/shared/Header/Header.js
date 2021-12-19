@@ -18,8 +18,9 @@ const Header = () => {
                                 <img src={logo} className='img-fluid' alt="" />
                             </div>
                         </div>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation nava-icon">
+                            {/* <span className="navbar-toggler-icon"></span> */}
+                            <i className="fas fa-bars navbar-toggler-icon"></i>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
 

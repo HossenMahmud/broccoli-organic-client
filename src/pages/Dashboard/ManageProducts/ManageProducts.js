@@ -3,7 +3,7 @@ import './ManageProducts.css';
 const ManageProducts = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/foods')
+        fetch('https://pure-sea-65908.herokuapp.com/foods')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
@@ -12,7 +12,7 @@ const ManageProducts = () => {
     const handleDelete = (id) => {
         let conform = window.confirm('Are You Sure Delete Item?');
         if (conform) {
-            fetch(`http://localhost:5000/deleteFood/${id}`, {
+            fetch(`https://pure-sea-65908.herokuapp.com/deleteFood/${id}`, {
                 method: "DELETE",
                 headers: { "Content-type": "application/json" },
             })

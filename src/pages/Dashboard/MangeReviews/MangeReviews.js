@@ -4,7 +4,7 @@ import './MangeReviews.css';
 const MangeReviews = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://pure-sea-65908.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, []);
@@ -13,7 +13,7 @@ const MangeReviews = () => {
     const handleDelete = (id) => {
         let conform = window.confirm('Are You Sure Delete Item?');
         if (conform) {
-            fetch(`http://localhost:5000/deletereview/${id}`, {
+            fetch(`https://pure-sea-65908.herokuapp.com/deletereview/${id}`, {
                 method: "DELETE",
                 headers: { "Content-type": "application/json" },
             })

@@ -27,7 +27,7 @@ const AddReview = () => {
         const reviewData = {
             ...allReviewData
         }
-        fetch("http://localhost:5000/addReviews", {
+        fetch("https://pure-sea-65908.herokuapp.com/addReviews", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(reviewData),

@@ -10,7 +10,7 @@ const Purchase = () => {
 
     // use to get single product
     useEffect(() => {
-        fetch(`http://localhost:5000/food/${id}`)
+        fetch(`https://pure-sea-65908.herokuapp.com/food/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [id]);
@@ -41,7 +41,7 @@ const Purchase = () => {
         const order = {
             ...orderData,
         }
-        fetch("http://localhost:5000/orders", {
+        fetch("https://pure-sea-65908.herokuapp.com/orders", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(order),
