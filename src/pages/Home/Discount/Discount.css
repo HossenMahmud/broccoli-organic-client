@@ -1,0 +1,12 @@
+.discount-item{
+    cursor:pointer;
+    overflow: hidden; 
+}
+
+.discount-item img{
+    transition: transform .9s ease;
+}
+
+.discount-item:hover img {
+    transform: scale(1.1);
+  }

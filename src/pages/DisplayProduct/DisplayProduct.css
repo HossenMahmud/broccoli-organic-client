@@ -1,0 +1,39 @@
+.product-item{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    overflow: hidden;
+}
+.product-info h3{
+    color: #80B500;
+    font-weight: bold;
+}
+
+.product-img{
+    position: relative;
+}
+
+.product-img img{
+    transition: transform .9s ease;
+    display: block;
+    width: 100%;
+    height: auto;
+   
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    bottom:0;
+    padding: 8px 0px;
+    width:0px;
+    background-color:#80B500;
+    color: #f1f1f1;
+    transition: .5s ease;
+    opacity:0;
+  }
+
+.product-item:hover img{
+    transform: scale(1.1);
+}
+.product-item:hover .overlay {
+    opacity: 1;
+    width: 100%;
+}

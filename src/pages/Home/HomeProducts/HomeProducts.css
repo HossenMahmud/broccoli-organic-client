@@ -1,0 +1,12 @@
+.section-title h1{
+    font-weight: bold;
+    font-family:fantasy;
+}
+
+.product-btn{
+    background-color: #80B500;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid #80B500;
+}

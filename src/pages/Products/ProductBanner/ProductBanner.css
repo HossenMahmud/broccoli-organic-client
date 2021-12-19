@@ -1,0 +1,13 @@
+.product-banner{
+    background-image: url(../../../images/banner1.jpg);
+    padding:150px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-banner-info h1{
+    color: white;
+}
+.product-banner-info h5{
+    color: #80B500;
+}

@@ -1,0 +1,15 @@
+.header-bg{
+    background-color: #F7F5EB;
+}
+.navbar-toggler-icon{
+    background-color: #699403;
+}
+
+.logoutBtn{
+    background-color:#ffffff;
+    border: 1px solid #699403;
+    padding: 3px 6px;
+    color:black;
+    margin: 3px 10px;
+    border-radius: 5px;
+}

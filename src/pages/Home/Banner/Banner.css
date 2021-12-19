@@ -1,0 +1,34 @@
+body{
+    background-color: #F7F5EB;
+}
+
+.banner-bg{
+    background-color: #F7F5EB;
+}
+
+.banner-info{
+    margin-top: 60px;
+}
+.banner-info h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.banner-btn{
+    background-color: #80B500;
+    border:1px solid #80B500;
+    padding: 12px 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all linear 1s;
+}
+.banner-btn:hover{
+    background-color: #D3A300;
+    border:1px solid #D3A300;
+}
+
+.banner-pra{
+    border-left: 2px solid white;
+    margin-right: 100px;
+}
